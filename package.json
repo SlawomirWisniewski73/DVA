@@ -1,0 +1,15 @@
+{
+  "name": "dva",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build": "npm run -ws build",
+    "test": "npm run -ws test",
+    "lint": "npm run -ws lint",
+    "typecheck": "npm run -ws typecheck",
+    "dev": "npm --workspace apps/demo run dev",
+    "preview": "npm --workspace apps/demo run preview"
+  },
+  "engines": { "node": ">=18.0.0" },
+  "license": "AGPL-3.0-or-later"
+}
